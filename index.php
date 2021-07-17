@@ -24,6 +24,12 @@
 				echo "<p>".$key."</p>";
 			}
 		}
+		function taxcalc($amount,$tax){
+			$addedtax = $amount*$tax;
+			$total = round($amount+$addedtax,2);
+			return $total;
+		}
+		echo taxcalc(750,0.223);
 		?>
 	</body>
 </html>
